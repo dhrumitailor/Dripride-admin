@@ -1,0 +1,8 @@
+# Project: DripRide Admin Panel
+- Stack: Vite, React 19, Tailwind CSS, Lucide Icons.
+- Style: Modern, high-end "Drip" aesthetic. Use dark mode by default with vibrant accents (e.g., Electric Blue or Neon Purple).
+- Rules: 
+  - Use functional components and clean Tailwind classes.
+  - Implement a "Slice" architecture (feature-based folders).
+  - Use Lucide-React for all icons.
+  - Prioritize responsiveness for tablet/desktop.
