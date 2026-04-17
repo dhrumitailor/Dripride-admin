@@ -6,10 +6,6 @@ const menu = [
   { name: "Operations", path: "/operations-support" },
   { name: "Marketing", path: "/marketing" },
   { name: "Tech / Product", path: "/tech-product" },
-  { name: "Revenue", path: "/revenue" },
-  { name: "Live Map", path: "/live-map" },
-  { name: "App Settings", path: "/app-settings" },
-  { name: "Admin Users", path: "/admin-users" },
 ];
 
 export default function Sidebar() {

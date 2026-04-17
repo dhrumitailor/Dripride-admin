@@ -72,9 +72,12 @@ function SectionModulePage({ title, subtitle, modules, accent = 'indigo' }) {
 
         {/* ✅ FIXED GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          {modules.map((module) => (
+          {/* {modules.map((module) => (
             <ModuleCard key={module} name={module} />
-          ))}
+          ))} */}
+          {modules.map((module) => (
+         <ModuleCard key={module.name} name={module.name} path={module.path} />
+         ))}
         </div>
       </div>
     </div>
