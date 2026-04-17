@@ -1,4 +1,23 @@
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+
+
 export default function DashboardPage() {
+  const data = [
+  { day: "Mon", revenue: 4000 },
+  { day: "Tue", revenue: 3000 },
+  { day: "Wed", revenue: 5000 },
+  { day: "Thu", revenue: 4000 },
+  { day: "Fri", revenue: 6000 },
+  { day: "Sat", revenue: 7000 },
+  { day: "Sun", revenue: 6500 },
+];
   return (
     <div className="space-y-6">
       
@@ -27,7 +46,22 @@ export default function DashboardPage() {
           <p className="text-2xl font-bold">12</p>
         </div>
       </div>
+//       {/* Chart */}
 
+<div className="bg-white p-4 rounded-xl shadow">
+  <h2 className="font-semibold mb-4">Weekly Revenue</h2>
+
+  <div className="h-64">
+    <ResponsiveContainer width="100%" height="100%">
+      <LineChart data={data}>
+        <XAxis dataKey="day" />
+        <YAxis />
+        <Tooltip />
+        <Line type="monotone" dataKey="revenue" stroke="#0f172a" />
+      </LineChart>
+    </ResponsiveContainer>
+  </div>
+</div>
       {/* Table */}
       <div className="bg-white p-4 rounded-xl shadow">
         <h2 className="font-semibold mb-4">Recent Rides</h2>

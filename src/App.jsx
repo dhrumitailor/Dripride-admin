@@ -82,6 +82,18 @@ import RevenuePage from './pages/ceo-leadership/RevenuePage'
 import LiveMapPage from './pages/ceo-leadership/LiveMapPage'
 import AppSettingsPage from './pages/ceo-leadership/AppSettingsPage'
 import AdminUsersPage from './pages/ceo-leadership/AdminUsersPage'
+import RiderProfilePage from './pages/operations-support/RiderProfilePage'
+import CaptainProfilePage from './pages/operations-support/CaptainProfilePage'
+import RideDetailPage from './pages/operations-support/RideDetailPage'
+import PaymentsPage from './pages/operations-support/PaymentsPage'
+import DocumentVerificationPage from './pages/operations-support/DocumentVerificationPage'
+import SupportTicketsPage from './pages/operations-support/SupportTicketsPage'
+import SafetyAlertsPage from './pages/operations-support/SafetyAlertsPage'
+import ScheduledRidesPage from './pages/operations-support/ScheduledRidesPage'
+import CitySettingsPage from './pages/operations-support/CitySettingsPage'
+import RefundRequestsPage from './pages/operations-support/RefundRequestsPage'
+import ReviewsPage from './pages/operations-support/ReviewsPage'
+import OnboardingPage from './pages/operations-support/OnboardingPage'
 
 function App() {
   return (
@@ -107,6 +119,18 @@ function App() {
         <Route path="/live-map" element={<LiveMapPage />} />
         <Route path="/app-settings" element={<AppSettingsPage />} />
         <Route path="/admin-users" element={<AdminUsersPage />} />
+        <Route path="/rider-profile" element={<RiderProfilePage />} />
+        <Route path="/captain-profile" element={<CaptainProfilePage />} />
+        <Route path="/ride-detail" element={<RideDetailPage />} />
+        <Route path="/payments" element={<PaymentsPage />} />
+        <Route path="/document-approval" element={<DocumentVerificationPage />} />
+        <Route path="/support-tickets" element={<SupportTicketsPage />} />
+        <Route path="/safety" element={<SafetyAlertsPage />} />
+        <Route path="/scheduled-rides" element={<ScheduledRidesPage />} />
+        <Route path="/city-settings" element={<CitySettingsPage />} />
+        <Route path="/refund-requests" element={<RefundRequestsPage />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/onboarding" element={<OnboardingPage />} />
 
       </Route>
 

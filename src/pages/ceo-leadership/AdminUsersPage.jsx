@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AdminUsersPage() {
   const [admins, setAdmins] = useState([
@@ -19,12 +20,27 @@ export default function AdminUsersPage() {
     const updated = admins.filter((_, i) => i !== index);
     setAdmins(updated);
   };
+  const navigate = useNavigate();
 
   return (
     <div className="space-y-6">
 
       {/* Header */}
-      <h1 className="text-2xl font-semibold">Admin Users</h1>
+      {/* <h1 className="text-2xl font-semibold">Admin Users</h1> */}
+      <div className="flex items-center gap-3 mb-2">
+
+  <button
+    onClick={() => navigate(-1)}
+    className="p-2 rounded-lg bg-white shadow hover:bg-gray-100 transition"
+  >
+    ←
+  </button>
+
+  <h1 className="text-xl font-semibold text-slate-900">
+    Admin Users
+  </h1>
+
+</div>
 
       {/* Add Admin */}
       <div className="bg-white p-4 rounded-xl shadow flex flex-col md:flex-row gap-4">

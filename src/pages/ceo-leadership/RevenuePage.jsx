@@ -1,9 +1,26 @@
+import { useNavigate } from "react-router-dom";
+
 export default function RevenuePage() {
+  const navigate = useNavigate();
   return (
     <div className="space-y-6">
 
       {/* Header */}
-      <h1 className="text-2xl font-semibold">Revenue Report</h1>
+      {/* <h1 className="text-2xl font-semibold">Revenue Report</h1> */}
+     <div className="flex items-center gap-3 mb-2">
+
+  <button
+    onClick={() => navigate(-1)}
+    className="p-2 rounded-lg bg-white shadow hover:bg-gray-100 transition"
+  >
+    ←
+  </button>
+
+  <h1 className="text-xl font-semibold text-slate-900">
+    Revenue Report
+  </h1>
+
+</div>
 
       {/* Filters */}
       <div className="bg-white p-4 rounded-xl shadow flex flex-col md:flex-row gap-4">
