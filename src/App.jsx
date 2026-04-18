@@ -95,6 +95,18 @@ import RefundRequestsPage from './pages/operations-support/RefundRequestsPage'
 import ReviewsPage from './pages/operations-support/ReviewsPage'
 import OnboardingPage from './pages/operations-support/OnboardingPage'
 
+import NotificationsPage from './pages/marketing/NotificationsPage'
+import CouponsPage from './pages/marketing/CouponsPage'
+import SubscriptionsPage from './pages/marketing/SubscriptionsPage'
+import RewardsPage from './pages/marketing/RewardsPage'
+import ReferralsPage from './pages/marketing/ReferralsPage'
+
+import DropoffReportPage from './pages/tech-product/DropoffReportPage'
+import AppVersionsPage from './pages/tech-product/AppVersionsPage'
+import PricingRulesPage from './pages/tech-product/PricingRulesPage'
+import DataExportPage from './pages/tech-product/DataExportPage'
+
+
 function App() {
   return (
     <Routes>
@@ -131,6 +143,17 @@ function App() {
         <Route path="/refund-requests" element={<RefundRequestsPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/onboarding" element={<OnboardingPage />} />
+
+        <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/coupons" element={<CouponsPage />} />
+        <Route path="/subscriptions" element={<SubscriptionsPage />} />
+        <Route path="/rewards" element={<RewardsPage />} />
+        <Route path="/referrals" element={<ReferralsPage />} />
+
+        <Route path="/dropoff-report" element={<DropoffReportPage />} />
+        <Route path="/app-versions" element={<AppVersionsPage />} />
+        <Route path="/pricing-rules" element={<PricingRulesPage />} />
+        <Route path="/data-export" element={<DataExportPage />} />
 
       </Route>
 
