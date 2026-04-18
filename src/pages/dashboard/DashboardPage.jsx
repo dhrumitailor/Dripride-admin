@@ -46,7 +46,7 @@ export default function DashboardPage() {
           <p className="text-2xl font-bold">12</p>
         </div>
       </div>
-//       {/* Chart */}
+    {/* Chart */}
 
 <div className="bg-white p-4 rounded-xl shadow">
   <h2 className="font-semibold mb-4">Weekly Revenue</h2>
