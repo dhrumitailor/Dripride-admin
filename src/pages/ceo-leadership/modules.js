@@ -22,5 +22,7 @@ export const sectionMeta = {
     { name: "Live Map", path: "/live-map" },
     { name: "App Settings", path: "/app-settings" },
     { name: "Admin Users", path: "/admin-users" },
+    { name: 'Admin Activity Logs', path: '/admin-logs' },
+    
   ],
 };

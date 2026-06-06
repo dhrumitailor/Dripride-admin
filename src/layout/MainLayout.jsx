@@ -71,7 +71,7 @@ export default function MainLayout() {
       <div className="flex-1">
 
         {/* 🔥 Topbar (Hamburger) */}
-        <div className="flex items-center justify-between bg-white p-4 shadow md:hidden">
+        {/* <div className="flex items-center justify-between bg-white p-4 shadow md:hidden">
           
           <button onClick={() => setOpen(true)}>
             ☰
@@ -80,7 +80,28 @@ export default function MainLayout() {
           <h1 className="font-semibold">dripride Admin</h1>
 
           <div />
-        </div>
+        </div> */}
+        {/* 🔥 Topbar with Global Search */}
+        <div className="flex items-center gap-3 bg-white p-4 shadow">
+
+  {/* Hamburger */}
+  <button onClick={() => setOpen(true)} className="md:hidden">
+    ☰
+  </button>
+
+  {/* 🔍 Global Search */}
+  <input
+    type="text"
+    placeholder="Search users, rides, captains..."
+    className="flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+  />
+
+  {/* Title (desktop only) */}
+  <h1 className="hidden md:block font-semibold whitespace-nowrap">
+    dripride Admin
+  </h1>
+
+</div>
 
         <div className="p-4 md:p-6">
           <Outlet />

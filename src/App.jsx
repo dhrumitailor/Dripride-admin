@@ -106,6 +106,7 @@ import AppVersionsPage from './pages/tech-product/AppVersionsPage'
 import PricingRulesPage from './pages/tech-product/PricingRulesPage'
 import DataExportPage from './pages/tech-product/DataExportPage'
 
+import AdminActivityLogsPage from './pages/ceo-leadership/AdminActivityLogsPage'
 
 function App() {
   return (
@@ -154,6 +155,8 @@ function App() {
         <Route path="/app-versions" element={<AppVersionsPage />} />
         <Route path="/pricing-rules" element={<PricingRulesPage />} />
         <Route path="/data-export" element={<DataExportPage />} />
+
+        <Route path="/admin-logs" element={<AdminActivityLogsPage />} />
 
       </Route>
 
